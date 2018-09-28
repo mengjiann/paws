@@ -21,6 +21,13 @@ Paws.App = (function () {
     self.commandsCallbacks = {
         //Home
         'home': {href: '/console'},
+
+        // Custom:
+        'cw': {href: '/cloudwatch/home?region=ap-southeast-1#logs:'},
+        'pipe': {href: '/codepipeline/home?region=ap-southeast-1#/dashboard'},
+        'ecs': {href: '/ecs/home?region=ap-southeast-1#/clusters'},
+        'sqs': {href: '/sqs/home?region=ap-southeast-1'},
+
         // Services
         'ct': {href: '/cloudtrail/home#/events'},
         'ec2': {href: '/ec2/v2/home#Instances:sort=desc:launchTime'},
